@@ -26,3 +26,5 @@ router.get("/confirmar/:enlace", comprobarEnlace);
 router.post("/confirmar/:enlace", confirmarUsuario);
 
 export default router;
+
+// Comentario

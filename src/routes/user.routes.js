@@ -9,7 +9,7 @@ import editarUsuario from "../handlers/user.handlers/editarUsuario.handlers.js";
 import loginUsuario from "../handlers/user.handlers/loginUsuario.handlers.js";
 import auth from "../middleware/auth.js";
 import eliminarUsuario from "../handlers/user.handlers/eliminarUsuario.handlers.js";
-import solicitudCambio from "../handlers/user.handlers/SolicitudCambio.handlers.js";
+import solicitudCambio from "../handlers/user.handlers/solicitudCambio.handlers.js";
 
 const router = express.Router();
 

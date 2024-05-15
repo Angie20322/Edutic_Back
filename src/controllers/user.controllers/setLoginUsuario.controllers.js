@@ -30,7 +30,7 @@ const setLoginUsuario = async (user) => {
       colegio: usuario.colegio,
     });
 
-    return {jwtToken, usuario};
+    return { jwtToken, usuario };
   }
 
   if (admin) {
@@ -50,7 +50,7 @@ const setLoginUsuario = async (user) => {
       colegio: "UDEC",
     });
 
-    return {jwtToken, admin};
+    return { jwtToken, admin };
   }
 };
 

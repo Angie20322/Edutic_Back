@@ -11,8 +11,10 @@ import auth from "../middleware/auth.js";
 import eliminarUsuario from "../handlers/user.handlers/eliminarUsuario.handlers.js";
 import solicitudCambio from "../handlers/user.handlers/solicitudCambio.handlers.js";
 
+// Permitir el enrutamiento
 const router = express.Router();
 
+// Rutas de usuario
 router.get("/", auth, allUser);
 router.post("/registrar", auth, newUser);
 router.get("/user/:id", auth, usuarioById);
@@ -26,5 +28,3 @@ router.get("/confirmar/:enlace", comprobarEnlace);
 router.post("/confirmar/:enlace", confirmarUsuario);
 
 export default router;
-
-// Comentario

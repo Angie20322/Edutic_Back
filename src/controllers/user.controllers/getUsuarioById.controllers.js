@@ -2,9 +2,7 @@ import { Usuario } from "../../models/index.js";
 
 const getUsuarioById = (id) => {
   try {
-    const usuario = Usuario.findOne({
-      where: { id: id },
-    });
+    const usuario = Usuario.findByPk(id);
     return usuario;
   } catch (error) {
     return error.message;

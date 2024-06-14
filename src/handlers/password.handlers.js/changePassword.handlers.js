@@ -2,11 +2,9 @@ import getChangePassword from "../../controllers/passwords.controllers.js/getCha
 
 const changePassword = async (req, res) => {
   const { id } = req.params;
-  const { password } = req.body;
-  console.log(id, password);
 
   try {
-    const cambiarPass = await getChangePassword(id, password);
+    const cambiarPass = await getChangePassword(id, req.body);
     res.status(200).json(cambiarPass);
   } catch (error) {
     res.status(400).json({ error: error.message });
